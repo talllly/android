@@ -25,7 +25,9 @@ import android.view.Surface;
 import android.view.TextureView;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.Button;
 import android.view.View;
+import android.widget.TextView;
 
 public class MainActivity extends Activity {
 
@@ -171,6 +173,13 @@ public class MainActivity extends Activity {
 
         mTextureView = (TextureView) findViewById(R.id.texture);
         mTextureView.setSurfaceTextureListener(mSurfaceTextureListner);
+
+        Button snap = (Button)findViewById(R.id.btn_takepicture);
+        snap.setOnClickListener(new Button.OnClickListener() {
+            public void onClick(View w) {
+
+            }
+        });
     }
 
     @Override
